@@ -1,0 +1,12 @@
+{
+  "tomsters": [{
+    "title": "Portlandia",
+    "image": "http://emberjs.com/images/tomsters/portland.png",
+    "description": "put a bird on it"
+  }],
+  "tags": [{
+    "name": "cute"
+  }, {
+    "name": "glasses"
+  }]
+}
