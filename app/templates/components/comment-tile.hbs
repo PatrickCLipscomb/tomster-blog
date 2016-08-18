@@ -1,0 +1,13 @@
+<div class="col-xs-4">
+  <p>
+    {{comment.text}}
+    <span class="glyphicon glyphicon-remove-circle" {{action 'deleteComment' comment}}></span>
+    <span class="glyphicon glyphicon-wrench" {{action 'showComment' comment}}></span>
+  </p>
+  {{#if showCommentUpdate}}
+    <p>
+      {{input value=comment.text}}
+      <span class="glyphicon glyphicon-ok" {{action 'updateComment' comment}}></span>
+    </p>
+  {{/if}}
+</div>

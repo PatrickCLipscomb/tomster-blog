@@ -5,4 +5,7 @@
     {{tomster.description}}
   </p>
   <hr>
+  {{#if notIndex}}
+  <button class="btn btn-danger" {{action 'deleteTomster' tomster}}>Delete "{{tomster.title}}"??</button>
+  {{/if}}
 </div>

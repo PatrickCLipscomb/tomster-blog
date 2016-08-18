@@ -3,7 +3,7 @@
 <div class="row">
   <ul>
   {{#each model.tomsters as |tomster|}}
-    <li>{{#link-to 'tomster' tomster.id}}{{tomster-tile tomster=tomster}}{{/link-to}}</li>
+    <li>{{#link-to 'tomster' tomster.id}}{{tomster-tile tomster=tomster deleteTomster="deleteTomster"}}{{/link-to}}</li>
   {{/each}}
 </ul>
 </div>

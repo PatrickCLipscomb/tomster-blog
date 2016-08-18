@@ -1,11 +1,11 @@
 <div class="container row">
-  {{tomster-tile tomster=model}}
+  {{tomster-tile tomster=model deleteTomster="deleteTomster" notIndex="true"}}
   {{new-comment tomster=model addComment="addComment"}}
   <h3>Comments:</h3>
   <hr>
   <ul>
   {{#each model.comments as |comment|}}
-    <li>{{comment.text}}</li>
+    <li>{{comment-tile comment=comment deleteComment="deleteComment"}}</li>
   {{/each}}
   </ul>
 </div>
