@@ -1,9 +1,11 @@
 {{nav-bar tags=model.tags}}
 
 <div class="row">
+  <ul>
   {{#each model.tomsters as |tomster|}}
-    {{#link-to 'tomster' tomster.id}}{{tomster-tile tomster=tomster}}{{/link-to}}
+    <li>{{#link-to 'tomster' tomster.id}}{{tomster-tile tomster=tomster}}{{/link-to}}</li>
   {{/each}}
+</ul>
 </div>
 <hr>
 {{new-tag save="save"}}

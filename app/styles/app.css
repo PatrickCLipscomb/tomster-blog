@@ -1,0 +1,8 @@
+ul {
+  list-style: none;
+}
+
+textarea {
+  background-color: rgba(0,0,256,0.06);
+  border-radius: 6px;
+}

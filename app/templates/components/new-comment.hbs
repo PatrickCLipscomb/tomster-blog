@@ -1,0 +1,10 @@
+<div class="col-xs-4">
+  <form >
+    <div class="form-group">
+      <label for="text">Add a comment</label>
+      <br>
+      {{input value=text id="text"}}
+    </div>
+    <button {{action "addComment"}} class="btn-success btn">Add Comment for "{{tomster.title}}"</button>
+  </form>
+</div>

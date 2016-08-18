@@ -1,15 +1,10 @@
 <div class="container row">
-  {{tomster-tile tomster=model.tomster}}
-  <div class="col-xs-4">
-  
-  </div>
-  <div class="col-xs-4">
-    <form >
-      <div class="form-group">
-        <label for="tag">Add your own tag</label>
-        {{input value=tag id="tag"}}
-      </div>
-      <button {{action "addTag"}} class="btn-success btn">Add tag</button>
-    </form>
-  </div>
+  {{tomster-tile tomster=model}}
+  {{new-comment tomster=model addComment="addComment"}}
+  <hr>
+  <ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.text}}</li>
+  {{/each}}
+  </ul>
 </div>
