@@ -1,12 +1,9 @@
-<div class="row">
-  <ul>
-    {{#each model as |tomster|}}
-      <li>
-        {{#link-to 'tomster' tomster.id}}{{tomster-tile tomster=tomster}}{{/link-to}}
-      </li>
-    {{/each}}
-  </ul>
+{{nav-bar tags=model.tags}}
 
+<div class="row">
+  {{#each model.tomsters as |tomster|}}
+    {{#link-to 'tomster' tomster.id}}{{tomster-tile tomster=tomster}}{{/link-to}}
+  {{/each}}
 </div>
 <hr>
-{{new-tomster tomStore="tomStore"}}
+{{new-tag save="save"}}

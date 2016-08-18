@@ -5,13 +5,13 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       tomsters: this.store.findAll('tomster'),
       tags: this.store.findAll('tag')
-    )}
+    })
   },
   actions: {
-    tomStore(params) {
-      var newTomster = this.store.createRecord('tomster', params);
-      newTomster.save();
-      this.transitionTo('index');
+    save(params) {
+      var newTag = this.store.createRecord('tag', params);
+      newTag.save();
+      this.transitionTo('index')
     }
   }
 });

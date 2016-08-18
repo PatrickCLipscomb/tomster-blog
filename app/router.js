@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('contact');
   this.route('article');
   this.route('tomster', {path: '/tomster/:tomster_id'});
+  this.route('tag', {path: '/tag/:tag_id'});
 });
 
 export default Router;

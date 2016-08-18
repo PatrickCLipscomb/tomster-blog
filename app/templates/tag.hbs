@@ -1,0 +1,11 @@
+<p>
+  {{model.name}}
+</p>
+
+{{new-tomster tag=model tomStore="tomStore"}}
+
+<div class="row">
+  {{#each model.tomsters as |tomster|}}
+    {{tomster-tile tomster=tomster}}
+  {{/each}}
+</div>
